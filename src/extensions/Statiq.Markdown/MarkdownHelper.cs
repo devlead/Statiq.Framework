@@ -112,7 +112,7 @@ namespace Statiq.Markdown
             }
             catch (Exception ex)
             {
-                document.LogWarning($"Exception while rendering Markdown: {ex.Message}");
+                document.LogWarning(ex, "Exception while rendering Markdown: {Message}", ex.Message);
             }
             return null;
         }
